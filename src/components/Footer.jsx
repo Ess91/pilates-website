@@ -61,7 +61,7 @@ export default function Footer() {
         </div>
         <div className="bigmark" aria-hidden="true">PILATES</div>
         <div className="legal">
-          <span>© {new Date().getFullYear()} Pilates Studios. Fictional studio, design case study. Designed & Built by <a href="www.estherboateng.co.uk" target="_blank">Esther Boateng</a></span>
+          <span>© {new Date().getFullYear()} Pilates Studios. Fictional studio, design case study. Designed & Built by <a href="https://www.estherboateng.co.uk" target="_blank">Esther Boateng</a></span>
           <span>hello@pilates.studio · 020 1234 5678</span>
         </div>
       </div>
