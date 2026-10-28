@@ -1,0 +1,100 @@
+.slots {
+  display: grid;
+  border-top: 1px solid var(--line);
+}
+.slot {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1.5fr) minmax(0, 1fr) minmax(
+      0,
+      1fr
+    ) 150px;
+  gap: 20px;
+  align-items: center;
+  padding-block: 22px;
+  border-bottom: 1px solid var(--line);
+}
+.slot .t {
+  font-family: var(--mono);
+  font-size: 17px;
+  font-variant-numeric: tabular-nums;
+}
+.slot .t small {
+  display: block;
+  font-family: var(--body);
+  font-size: 13px;
+  color: var(--muted);
+}
+.slot .cl {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+.slot .cl strong {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+}
+.slot .tch {
+  font-size: 15px;
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 4px;
+}
+.slot .tch:hover {
+  text-decoration-color: var(--ink);
+}
+.slot .where {
+  font-size: 15px;
+  color: var(--muted);
+  display: grid;
+  gap: 4px;
+}
+.cap {
+  height: 3px;
+  background: var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+  max-width: 140px;
+}
+.cap i {
+  display: block;
+  height: 100%;
+  background: var(--ink);
+}
+.spots {
+  font-size: 13px;
+  color: var(--muted);
+}
+.spots.low {
+  color: var(--sp-r);
+}
+.slot.past {
+  opacity: 0.4;
+}
+.slot .act {
+  display: flex;
+  justify-content: flex-end;
+}
+.booked-tag {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 9px 14px;
+  border-radius: 999px;
+  background: var(--stone);
+  white-space: nowrap;
+}
+@media (max-width: 860px) {
+  .slot {
+    grid-template-columns: 72px minmax(0, 1fr) auto;
+    row-gap: 8px;
+    column-gap: 14px;
+  }
+  .slot .tchw,
+  .slot .where {
+    grid-column: 2;
+  }
+  .slot .act {
+    grid-column: 3;
+    grid-row: 1;
+  }
+}

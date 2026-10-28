@@ -1,0 +1,90 @@
+import { IMG } from "./media";
+
+// spring: "y" light, "b" medium, "r" heavy. Used for the colour dot on every class.
+export const SPRING_LEVELS = {
+  y: "Light springs",
+  b: "Medium springs",
+  r: "Heavy springs",
+};
+
+export const CLASSES = [
+  {
+    id: "foundations",
+    name: "Reformer Foundations",
+    spring: "y",
+    mins: 50,
+    capacity: 12,
+    room: "reformer",
+    image: IMG.straps,
+    description: "Learn the machine: carriage, straps, springs and footbar. Slow tempo and lots of cueing.",
+    bestFor: "First-timers and returners",
+  },
+  {
+    id: "flow",
+    name: "Reformer Flow",
+    spring: "b",
+    mins: 50,
+    capacity: 12,
+    room: "reformer",
+    image: IMG.plank,
+    description: "Continuous sequencing that links footwork, side work and standing work into one long phrase.",
+    bestFor: "Comfortable on the reformer",
+  },
+  {
+    id: "burn",
+    name: "Reformer Burn",
+    spring: "r",
+    mins: 45,
+    capacity: 12,
+    room: "reformer",
+    image: IMG.arabesque,
+    description: "Heavier springs, longer holds and minimal rest. Expect shaking legs in the best way.",
+    bestFor: "Regulars after a challenge",
+  },
+  {
+    id: "jump",
+    name: "Jumpboard Cardio",
+    spring: "r",
+    mins: 40,
+    capacity: 12,
+    room: "reformer",
+    image: IMG.heroPoster,
+    description: "Low-impact plyometrics lying on the carriage. Heart rate up, joints spared.",
+    bestFor: "Cardio without the pounding",
+  },
+  {
+    id: "tower",
+    name: "Tower & Small Group",
+    spring: "b",
+    mins: 50,
+    capacity: 8,
+    room: "tower",
+    image: IMG.classPoster,
+    description: "Eight people, push-through bar and leg springs, with plenty of hands-on correction.",
+    bestFor: "Spinal mobility and precision",
+  },
+  {
+    id: "mat",
+    name: "Classical Mat",
+    spring: "b",
+    mins: 50,
+    capacity: 16,
+    room: "mat",
+    image: IMG.matRoom,
+    description: "Joseph Pilates' original 34 exercises, in order, from the Hundred to the Seal.",
+    bestFor: "Anyone, any level",
+  },
+  {
+    id: "stretch",
+    name: "Stretch & Release",
+    spring: "y",
+    mins: 45,
+    capacity: 16,
+    room: "mat",
+    image: IMG.back,
+    description: "Long-held stretches, foam roller and breath. The class your hamstrings keep asking for.",
+    bestFor: "Recovery days",
+  },
+];
+
+export const CLASS_BY_ID = Object.fromEntries(CLASSES.map((c) => [c.id, c]));

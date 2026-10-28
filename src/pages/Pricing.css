@@ -1,0 +1,50 @@
+.plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr));
+  gap: 20px;
+}
+.plan {
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 28px;
+  display: grid;
+  gap: 16px;
+  align-content: start;
+  background: var(--bg);
+  align-content: space-around;
+}
+.plan .pr {
+  font-family: var(--display);
+  font-weight: 300;
+  font-size: 52px;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+.plan ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 15px;
+  display: grid;
+  gap: 6px;
+}
+.plan .btn {
+  margin-top: 8px;
+}
+.plan.feature {
+  background: var(--cta);
+  color: var(--cta-ink);
+  border-color: var(--cta);
+}
+.plan.feature .muted,
+.plan.feature .eyebrow {
+  color: inherit;
+  opacity: 0.7;
+}
+.plan.feature .btn {
+  background: var(--cta-ink);
+  color: var(--cta);
+  border-color: var(--cta-ink);
+}
+.demo-note {
+  margin-top: 20px;
+}
